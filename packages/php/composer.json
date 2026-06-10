@@ -1,0 +1,23 @@
+{
+    "name": "paying/askpay",
+    "description": "Official PHP client for AskPay by Paying.co — payment links, QR codes, and status checks.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://ask.paying.co/mcp",
+    "keywords": ["payments", "payment-links", "request-to-pay", "qr-code", "mcp", "iso", "paying"],
+    "authors": [
+        { "name": "Paying.co (Mojave Payment Technologies, LLC)" }
+    ],
+    "support": {
+        "issues": "https://github.com/PayingCo/askpay-sdks/issues",
+        "source": "https://github.com/PayingCo/askpay-sdks"
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": { "Paying\\AskPay\\": "src/" }
+    }
+}
