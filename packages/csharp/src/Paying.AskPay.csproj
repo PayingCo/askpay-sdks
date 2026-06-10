@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;netstandard2.1</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+
+    <PackageId>Paying.AskPay</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Paying.co (Mojave Payment Technologies, LLC)</Authors>
+    <Description>Official .NET client for AskPay by Paying.co — payment links, QR codes, and status checks.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://ask.paying.co/mcp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PayingCo/askpay-sdks</RepositoryUrl>
+    <PackageTags>payments;payment-links;request-to-pay;qr-code;mcp;iso;paying</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" Condition="'$(TargetFramework)' == 'netstandard2.1'" />
+  </ItemGroup>
+
+</Project>
