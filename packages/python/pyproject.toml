@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paying-askpay"
+version = "0.1.0"
+description = "Official Python client for AskPay by Paying.co — payment links, QR codes, and status checks."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Paying.co (Mojave Payment Technologies, LLC)" }]
+requires-python = ">=3.9"
+keywords = ["payments", "payment-links", "request-to-pay", "qr-code", "mcp", "iso", "paying"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://ask.paying.co/mcp"
+Repository = "https://github.com/PayingCo/askpay-sdks"
+Issues = "https://github.com/PayingCo/askpay-sdks/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["askpay"]
